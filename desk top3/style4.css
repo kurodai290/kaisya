@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 40px 20px 150px; /* 上下左右にゆとりを持たせる */
+  min-height: 120vh;        /* ページ全体を下に伸ばして余裕を確保 */
+  box-sizing: border-box;
+  color: #333333;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.8;
+  background: linear-gradient(#9cc7ff, #ab93ff);
+}
+/* 汎用クラス */
+.text-center {
+  text-align: center;
+}
+.box-018 {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em calc(1.5em + 9px);
+    border-top: 1px solid #2589d0;
+    border-bottom: 1px solid #2589d0;
+    color: #333;
+}
+
+.box-018::before,
+.box-018::after {
+    position: absolute;
+    width: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(100% + 20px);
+    background-color: #2589d0;
+    content: '';
+}
+
+.box-018::before {
+    left: 9px;
+}
+
+.box-018::after {
+    right: 9px;
+}
+.heading-5 {
+    padding:0 .4em .2em;
+    border-bottom: 3px double #2589d0;
+    background-color: #ffffff;
+    color: #333333;
+}
