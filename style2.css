@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 40px 20px 150px; /* 上下左右にゆとりを持たせる */
+  min-height: 120vh;        /* ページ全体を下に伸ばして余裕を確保 */
+  box-sizing: border-box;
+  color: #333333;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.8;
+  background: linear-gradient(#b2ff85, #b0ffee);
+}
+/* 汎用クラス */
+.text-center {
+  text-align: center;
+}
+.heading-31 {
+    position: relative;
+    padding: .3em 0 .2em 1em;
+    border-bottom: 3px solid #2589d0;
+    color: #333333;
+}
+
+.heading-31::before {
+    position: absolute;
+    top: 0;
+    left: .3em;
+    transform: rotate(55deg);
+    height: 11px;
+    width: 12px;
+    background: #2589d0;
+    content: '';
+}
+
+.heading-31::after {
+    position: absolute;
+    transform: rotate(15deg);
+    top: .6em;
+    left: 0;
+    height: 8px;
+    width: 8px;
+    background: #2589d0;
+    content: '';
+}
+.box-014 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em 1.5em;
+    border: 2px solid #5ba9f7;
+    border-radius: 3px;
+    background-image: linear-gradient(45deg, #5ba9f712 25%, transparent 25%, transparent 50%, #5ba9f712 50%, #5ba9f712 75%, transparent 75%, transparent), linear-gradient(-45deg, #5ba9f712 25%, transparent 25%, transparent 50%, #5ba9f712 50%, #5ba9f712 75%, transparent 75%, transparent);
+    background-color: #5ba9f70d;
+    background-size: 50px 50px;
+}
